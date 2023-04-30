@@ -105,8 +105,8 @@
                 </executions>
             </plugin>
 
-            <!--清单属性-->
-            <!--<plugin>
+            <!--清单属性 must-->
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
@@ -118,10 +118,10 @@
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>-->
+            </plugin>
 
-            <!--java -jar 运行-->
-            <!--<plugin>
+            <!--java -jar  主类问题 运行-->
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
@@ -135,7 +135,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
 
 
             <!--maven 打包为空-->
@@ -164,6 +164,16 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>-->
+
+
+
+            <!--<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.example.HelloWorldApplication</mainClass>
+                </configuration>
             </plugin>-->
         </plugins>
     </build>
